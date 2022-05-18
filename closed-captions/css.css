@@ -10,11 +10,49 @@ body {
 	background-color: black;
 }
 
+.videogroot {
+	position: relative;
+	padding-bottom: 50%;
+	height: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+
+
+iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#closed-captions {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	width: 90%;
+	height: 100%;
+	padding: 0rem;
+	margin: 0 auto;
+	z-index: 10;
+	pointer-events: none;
+}
+
 #closed-captions p {
 	opacity: 0;
 	transition: .05s;
 	position: absolute;
 	color: white;
+	text-align: center;
+	padding-left: 8rem;
+	padding-top: 15rem;
+	z-index: 10;
 }
 
 #closed-captions .on {
@@ -27,10 +65,37 @@ body {
 }
 
 .voice1 {
-	font-style: italic;
+	font-family: "Brenner Mono Regular";
+	font-size: 1.2rem;
+
 }
+
 .voice2 {
-	font-weight: bold;
+	font-family: "Brenner Sans Condensed Medium";
+	font-size: 1rem;
+}
+
+.voice3 {
+	font-family: "Brenner Sans Condensed Light";
+	font-style: italic;
+	font-size: 1.2rem;
+}
+
+.voice4 {
+	font-family: "Brenner Mono Medium";
+	font-style: italic;
+	font-size: 1rem;
+}
+
+.voice5 {
+	font-family: "Brenner Mono Light";
+	font-style: italic;
+	font-size: 1rem;
+}
+
+.voice6 {
+	font-family: "Brenner Mono Bold";
+	font-size: 2rem;
 }
 
 /* **********************************************
@@ -45,68 +110,91 @@ You probably want to change the styling.
 /* styling aparte woorden begin */
 .p0 span {
 	opacity: 0;
-	font-family: brenner;
+	font-family: "Brenner Mono Regular";
+	font-size: 1.2rem;
 }
+
 .p0.on span:first-of-type {
 	opacity: 1;
 	transition: 0s;
-	font-weight: 200;
+	font-family: "Brenner Mono Regular";
+	font-size: 1.2rem;
 }
+
 .p0.on span:nth-of-type(2) {
 	opacity: 1;
 	transition: 0s .4s;
 	margin-right: -.25em;
-	font-weight: 400;
+	font-family: "Brenner Mono Regular";
+	font-size: 1.2rem;
 }
+
 .p0.on span:nth-of-type(3) {
 	opacity: 1;
 	transition: 0s .5s;
 	margin-right: -.25em;
-	font-weight: 600;
+	font-family: "Brenner Mono Regular";
+	font-size: 1.2rem;
 }
+
 .p0.on span:nth-of-type(4) {
 	opacity: 1;
 	transition: 0s .7s;
 	margin-right: -.25em;
-	font-weight: 800;
+	font-family: "Brenner Mono Regular";
+	font-size: 1.2rem;
 }
+
 .p0.on span:nth-of-type(5) {
 	opacity: 1;
 	transition: 0s 1.1s;
 	margin-right: -.25em;
-	font-family: "brenner sans";
+	font-family: "Brenner Mono Regular";
+	font-size: 1.2rem;
 }
+
 .p0.on span:nth-of-type(6) {
 	opacity: 1;
 	transition: 0s 1.4s;
 	margin-right: -.25em;
-	font-family: "brenner display";
+	font-family: "Brenner Mono Regular";
+	font-size: 1.2rem;
 }
+
 .p0.on span:nth-of-type(7) {
 	opacity: 1;
 	transition: 0s 1.7s;
 	margin-right: -.25em;
-	font-family: "brenner script";
+	font-family: "Brenner Mono Regular";
+	font-size: 1.2rem;
 }
+
 .p0.on span:nth-of-type(8) {
 	opacity: 1;
 	transition: 0s 2s;
-	font-family: "brenner script";
+	font-family: "Brenner Mono Regular";
+	font-size: 1.2rem;
 }
+
 .p0.on span:nth-of-type(9) {
 	opacity: 1;
 	transition: 0s 3s;
-	font-family: "brenner Sans condensed";
+	font-family: "Brenner Mono Regular";
+	font-size: 1.2rem;
 }
+
 .p0.on span:nth-of-type(10) {
 	opacity: 1;
 	transition: 0s 3.2s;
-	font-family: "brenner mono";
+	font-family: "Brenner Mono Regular";
+	font-size: 1.2rem;
 }
+
 .p0.on span:nth-of-type(11) {
 	opacity: 1;
 	transition: 0s 3.7s;
-	font-family: "brenner slab";
+	font-family: "Brenner Mono Bold";
+	font-size: 1.2rem;
 }
 
 .p1.on {
@@ -148,7 +236,126 @@ Sounds.
 .sound3 {
 	background: #FF5F00;
 	transition: 0.2s;
+	animation: oranjeFlits 1s;
+}
 
+@keyframes oranjeFlits {
+	0% {
+		background-color: #FF5F00;
+	}
+
+	100% {
+		background-color: white;
+	}
+}
+
+.sound4 {
+	background: white;
+}
+
+.sound5 {
+	background: black;
+}
+
+.sound6 {
+	background: #B20600;
+	transition: 1s;
+	transition-duration: 1s;
+}
+
+.sound7 {
+	background: black;
+}
+
+.sound8 {
+	background: white;
+	transition: 0.2s;
+}
+
+.sound9 {
+	background: #B20600;
+	transition: 0.2s;
+}
+
+.sound10 {
+	background: black;
+}
+
+.sound11 {
+	background: white;
+	transition: 0.2s;
+}
+
+.sound12 {
+	background: #B20600;
+	transition: 0.5s;
+}
+
+.sound13 {
+	background: black;
+}
+
+.sound14 {
+	/* Ik wilde de achtergrond een infaded gifje maken, maar dit is mij niet gelukt. Ik heb hulp gevraagd, maar het werkte niet... */
+	/* background-image: url('https://media.giphy.com/media/c7hPQWt7pNw4w/giphy.gif');
+    background-size: cover; */
+	animation-name: tril;
+	transition: 42s;
+	background: #FF1700;
+	animation-duration: 42s;
+}
+
+
+@keyframes tril {
+	0% {
+		transform: translateX(0%);
+	}
+
+	10% {
+		transform: translateX(1%);
+	}
+
+	20% {
+		transform: translateX(2%);
+	}
+
+	30% {
+		transform: translateX(1%);
+	}
+
+	40% {
+		transform: translateX(0%);
+	}
+
+	50% {
+		transform: translateX(-1%);
+	}
+
+	60% {
+		transform: translateX(-2%);
+	}
+
+	70% {
+		transform: translateX(-1%);
+	}
+
+	80% {
+		transform: translateX(0%);
+	}
+
+	90% {
+		transform: translateX(1%);
+	}
+
+	100% {
+		transform: translateX(0%);
+	}
+}
+
+.sound15 {
+	background: black;
+	transition: 0.5s;
+}
  
  
 
