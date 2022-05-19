@@ -3,7 +3,7 @@
 ## Onderbouwing
 
 ### Typografie
-Ik heb voor de typografie gekozen om het gebruik te maken van de Brenner familie. Hier zaten een aantal fonts tussen, die toen ik ze zag, meteen voor ogen zag waar ze gebruikt konden worden in de captions. Zoals beschreven is de typeface zeer flexibel en heb ik als designer meer controle over de scenes.<br>
+Ik heb voor de typografie gekozen om gebruik te maken van de Brenner familie. Hier zaten een aantal fonts tussen, die toen ik ze zag, meteen voor ogen zag waar ze gebruikt konden worden in de captions. Zoals beschreven is de typeface zeer flexibel en heb ik als designer meer controle over de scenes.<br>
 
 
 Vervolgens heb ik de tekst op de video geplaatst. Ik wilde graag het effect geven van normale ondertiteling, die vaak onderin in het midden getoont wordt. Echter wilde ik alsnog wat ruimte buiten de video overlaten voor kleureffecten. (hier later meer over). <br>
