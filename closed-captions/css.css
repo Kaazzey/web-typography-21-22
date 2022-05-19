@@ -20,7 +20,6 @@ body {
 	margin: 0 auto;
 }
 
-
 iframe {
 	position: absolute;
 	top: 0;
@@ -64,35 +63,41 @@ iframe {
 	opacity: 0;
 }
 
+
+/* sir */
 .voice1 {
 	font-family: "Brenner Mono Regular";
 	font-size: 1.2rem;
 
 }
 
+/* stem van hoofdpersonage */
 .voice2 {
 	font-family: "Brenner Sans Condensed Medium";
 	font-size: 1rem;
 }
 
+/* fuck off skinjob */
 .voice3 {
 	font-family: "Brenner Sans Condensed Light";
 	font-style: italic;
 	font-size: 1.2rem;
 }
-
+/* computer baseline tester stem */
 .voice4 {
 	font-family: "Brenner Mono Medium";
 	font-style: italic;
 	font-size: 1rem;
 }
 
+/* computer baseline tester stem, na het goed voltooien van de test */
 .voice5 {
 	font-family: "Brenner Mono Light";
 	font-style: italic;
 	font-size: 1rem;
 }
 
+/* intimiderende computer baseline stem na het niet voltooien van de test */
 .voice6 {
 	font-family: "Brenner Mono Bold";
 	font-size: 2rem;
@@ -216,6 +221,7 @@ Sounds.
 	animation: flits 1s;
 }
 
+/* intens alarm flits */
 @keyframes flits {
 	0% {
 		background-color: blue;
@@ -239,6 +245,7 @@ Sounds.
 	animation: oranjeFlits 1s;
 }
 
+/* alarm flits */
 @keyframes oranjeFlits {
 	0% {
 		background-color: #FF5F00;
@@ -249,113 +256,208 @@ Sounds.
 	}
 }
 
+/* The moment the class .sound4 is added to the body, the background is white*/
 .sound4 {
 	background: white;
 }
 
+/* The moment the class .sound5 is added to the body, the background is black*/
 .sound5 {
 	background: black;
 }
 
+/* The moment the class .sound6 is added to the body, the background is red*/
 .sound6 {
 	background: #B20600;
 	transition: 1s;
 	transition-duration: 1s;
 }
 
+/* The moment the class .sound7 is added to the body, the background is black*/
 .sound7 {
 	background: black;
 }
 
+/* The moment the class .sound8 is added to the body, the background is white*/
 .sound8 {
 	background: white;
 	transition: 0.2s;
 }
 
+/* The moment the class .sound9 is added to the body, the background is red*/
 .sound9 {
 	background: #B20600;
 	transition: 0.2s;
 }
 
+
+/* The moment the class .sound10 is added to the body, the background is black*/
 .sound10 {
 	background: black;
 }
 
+
+/* The moment the class .sound11 is added to the body, the background is white*/
 .sound11 {
 	background: white;
 	transition: 0.2s;
 }
 
+/* The moment the class .sound12 is added to the body, the background is red*/
 .sound12 {
 	background: #B20600;
 	transition: 0.5s;
 }
 
+/* The moment the class .sound13 is added to the body, the background is black*/
 .sound13 {
 	background: black;
 }
 
+/* The moment the class .sound14 is added to the body, the background is bright red*/
 .sound14 {
 	/* Ik wilde de achtergrond een infaded gifje maken, maar dit is mij niet gelukt. Ik heb hulp gevraagd, maar het werkte niet... */
 	/* background-image: url('https://media.giphy.com/media/c7hPQWt7pNw4w/giphy.gif');
     background-size: cover; */
-	animation-name: tril;
+	animation-name: golf;
 	transition: 42s;
 	background: #FF1700;
 	animation-duration: 42s;
 }
 
 
-@keyframes tril {
+@keyframes golf {
 	0% {
 		transform: translateX(0%);
+		transform: translateY(0%);
 	}
 
 	10% {
 		transform: translateX(1%);
+		transform: translateY(1%);
+		transform: rotate(1deg);
 	}
 
 	20% {
 		transform: translateX(2%);
+		transform: translateY(2%);
+		transform: rotate(2deg);
 	}
 
 	30% {
 		transform: translateX(1%);
+		transform: translateY(1%);
+		transform: rotate(1deg);
 	}
 
 	40% {
 		transform: translateX(0%);
+		transform: translateY(0%);
+		transform: rotate(0deg);
 	}
 
 	50% {
 		transform: translateX(-1%);
+		transform: translateY(-1%);
+		transform: rotate(-1deg);
 	}
 
 	60% {
 		transform: translateX(-2%);
+		transform: translateY(-2%);
+		transform: rotate(-2deg);
 	}
 
 	70% {
 		transform: translateX(-1%);
+		transform: translateY(-1%);
+		transform: rotate(-1deg);
 	}
 
 	80% {
 		transform: translateX(0%);
+		transform: translateY(0%);
+		transform: rotate(0deg);
 	}
 
 	90% {
 		transform: translateX(1%);
+		transform: translateY(1%);
+		transform: rotate(1deg);
+		transform: scale(1.1);
 	}
 
 	100% {
 		transform: translateX(0%);
+		transform: translateY(0%);
+		transform: rotate(0deg);
 	}
 }
 
+/* The moment the class .sound15 is added to the body, the background is black*/
 .sound15 {
 	background: black;
 	transition: 0.5s;
 }
+
+
+/* The moment the class .sound16 is added to the body, the background is a radial gradient of blue and grey*/
+/* het sfeervolle golvende geluid gevisualiseerd*/
+.sound16 {
+	background: radial-gradient(circle, rgba(77,77,77,1) 0%, rgba(211,250,255,1) 100%);
+	animation: sfeer 44s;
+}
+
+/* animatie van het sfeervolle geluid */
+@keyframes sfeer {
+	0% {
+		opacity: 0.3;
+	}
+  
+	10% {
+		opacity: 0.7;
+	}
+  
+	20% {
+		opacity: 0.3;
+	}
+  
+	30% {
+		opacity: 0.6;
+	}
+  
+	40% {
+		opacity: 0.6;
+	}
+  
+	50% {
+		opacity: 0.4;
+	}
+  
+	60% {
+		opacity: 0.3;
+	}
+  
+	70% {
+		opacity: 0.7;
+	}
+  
+	80% {
+		opacity: 0.4;
+	}
+  
+	90% {
+		opacity: 0.6;
+	}
+  
+	100% {
+		opacity: 0.8;
+	}
+ }
+
+ .sound17 {
+	 background: black;
+ }
  
  
 
@@ -363,13 +465,13 @@ iframe {
 	transition: 1s;
 }
 
-/* The moment the class .sound1 is added to the body, the movie makes a turn */
+/* The moment the class .sound1 is added to the body, the movie makes a 180 degree turn */
 .sound1 iframe {
 	/* transform: rotate(180graden); */
 	transform: rotateX(180deg);
 }
 
-/* The moment the class .sound2 is added to the body, the movie makes a turn */
+/* The moment the class .sound2 is added to the body, the movie makes a 360 degree turn */
 .sound2 iframe {
 	/* transform: rotate(360graden); */
 	transform: rotateX(360deg);
